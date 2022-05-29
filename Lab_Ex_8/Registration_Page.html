@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>REGISTRATION FORM</title>
+       
+    </head>
+    <body>
+       <h1>Welcome to our website..!!</h1>
+        <nav>
+            <a href="Home_Page.html">HOME</a>
+            <a href="Login_Page.html" >LOGIN</a>
+            <a href="#" id="currentPage">REGISTRATION</a>
+            <a href="Catalogue.jsp">CATALOGUE</a>
+            <a href="Cart.jsp">CART</a>
+        </nav>
+        
+            <form  id="registerForm" action="http://localhost:8080/WebApplication2/LAB_8_HTML/Login_Check.jsp">
+                <h2>REGISTRATION FORM</h2>
+		Name:<input type="text" name="name"><br><br>
+                Password:<input type="password" name="password" id="pwd"><br><br>
+                Reenter Password:<input type="password" name="rPassword" id="rpwd" onfocus="resetPwd()"><br><br>
+		Phone no:<input type="number" name="phone"><br><br>
+		Mail id:<input type="email" name="email"><br><br>
+		Date of Birth: <input type="date" name="date"><br><br>
+                Address:<textarea name="address" rows="3" cols="20"></textarea><br><br>
+		<input type="submit" value="Submit" name="registerSubmit">
+		<input type="reset" value="Reset">
+
+            </form>
+       <script>
+           function resetPwd()
+           {
+               document.getElementById("rpwd").innerHTML="";
+           }
+           </script>
+    </body>
+</html>
